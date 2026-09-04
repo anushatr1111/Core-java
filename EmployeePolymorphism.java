@@ -1,6 +1,8 @@
 import java.util.Scanner;
 public class EmployeePolymorphism {
-    
+    void calculateBonus() {
+        System.out.println("Calculating employee bonus");
+    }
 }
 class Developer extends EmployeePolymorphism {
     void calculateBonus() {
