@@ -12,6 +12,8 @@ Welcome to my Core Java learning repository! This project contains a collection 
 - [5. String Processing](#5-string-processing)
 - [6. Recursion & Fundamental Algorithms](#6-recursion--fundamental-algorithms)
 - [7. Pattern Printing](#7-pattern-printing)
+- [8. Exception Handling](#8-exception-handling)
+- [9. Collections Framework & Mini Projects](#9-collections-framework--mini-projects)
 
 ---
 
@@ -132,3 +134,30 @@ I learned how to construct nested loops to output specific shape geometries on t
 - [`IncreasingTriangle.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/IncreasingTriangle.java) / [`NumberTriangle.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/NumberTriangle.java): Left-aligned row incremental designs.
 - [`ReverseTriangle.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/ReverseTriangle.java): Decreasing row sizes.
 - [`NumberPyramid.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/NumberPyramid.java): Symmetrical spacing containing centered values.
+
+---
+
+## 8. Exception Handling
+Practiced robust runtime error handling using `try-catch-finally`, `throw`, `throws`, and custom exception hierarchies.
+
+### Programs & Files:
+- [`ArrayException.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/ArrayException.java): Catching `ArrayIndexOutOfBoundsException`.
+- [`DivisionException.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/DivisionException.java): Handling division by zero (`ArithmeticException`).
+- [`MultipleExceptions.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/MultipleExceptions.java): Managing multiple exception types gracefully.
+- [`CustomException.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/CustomException.java): Defining and throwing domain-specific user-defined exceptions.
+- [`BankAccountValidationException.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/BankAccountValidationException.java): Business logic validation with exceptions.
+- [`ATMExceptionSystem.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/ATMExceptionSystem.java): Full ATM interaction workflow featuring custom exception validation for PIN, deposit, and balance.
+
+---
+
+## 9. Collections Framework & Mini Projects
+Practiced dynamic data structures including `ArrayList`, `HashSet`, and `HashMap`, frequency analysis, duplicate filtering, and building an interactive console-based Student Management System.
+
+### Programs & Files:
+- [`ArrayListStudentNames.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/ArrayListStudentNames.java): Adding, indexing, searching, and removing elements in an `ArrayList<String>`.
+- [`ArrayListNumbers.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/ArrayListNumbers.java): Computing sum, largest, smallest, even count, and odd count with `ArrayList<Integer>`.
+- [`RemoveDuplicatesHashSet.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/RemoveDuplicatesHashSet.java): Filtering array duplicates and preserving order using `HashSet`/`LinkedHashSet`.
+- [`StudentMarksHashMap.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/StudentMarksHashMap.java): Key-value storage for student marks, searching, highest, lowest, and average calculations using `HashMap`.
+- [`WordFrequencyHashMap.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/WordFrequencyHashMap.java): Word frequency counter in a sentence leveraging the `map.containsKey()` pattern.
+- [`StudentManagementSystem.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/StudentManagementSystem.java): **Boss Challenge** - A full-featured CLI Student Management System integrating `ArrayList`, `HashMap`, OOP modular design, custom exception handling (`StudentNotFoundException`, `InvalidMarksException`, `DuplicateStudentException`), and interactive menu navigation.
+
