@@ -161,3 +161,16 @@ Practiced dynamic data structures including `ArrayList`, `HashSet`, and `HashMap
 - [`WordFrequencyHashMap.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/WordFrequencyHashMap.java): Word frequency counter in a sentence leveraging the `map.containsKey()` pattern.
 - [`StudentManagementSystem.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/StudentManagementSystem.java): **Boss Challenge** - A full-featured CLI Student Management System integrating `ArrayList`, `HashMap`, OOP modular design, custom exception handling (`StudentNotFoundException`, `InvalidMarksException`, `DuplicateStudentException`), and interactive menu navigation.
 
+---
+
+## 10. Collections Sorting, Comparable, Comparator & Boss Challenge
+Practiced sorting algorithms and APIs with `Collections.sort()`, iterating and searching sets with `HashSet`, implementing natural ordering via `Comparable`, creating custom sorting strategies with `Comparator`, and architecting an interactive, encapsulated Employee Management System.
+
+### Programs & Files:
+- [`SortNumbers.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/SortNumbers.java): Sorting an `ArrayList<Integer>` with 10 numbers in ascending and descending orders using `Collections.sort()`.
+- [`IterateThroughaHashSet.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/IterateThroughaHashSet.java): Storing unique elements in `HashSet<String>`, traversing using `for-each` and `Iterator`, and performing existence checks.
+- [`SortStudentNames.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/SortStudentNames.java): Alphabetical and reverse-alphabetical sorting of student names using `ArrayList<String>`.
+- [`StudentSortingwithComparable.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/StudentSortingwithComparable.java): Demonstrating natural ordering with `Comparable<Student>`, comparing students by marks in ascending order (`compareTo`).
+- [`StudentSortingwithComparator.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/StudentSortingwithComparator.java): Implementing multiple custom sorting rules with `Comparator<Student>` (alphabetical by name and descending by marks).
+- [`EmployeeSortingSystem.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/EmployeeSortingSystem.java): **Boss Challenge** — An Employee Management System with an interactive CLI menu, `ArrayList<Employee>`, custom `Comparator` sorting by salary, name, and age, highest salary queries, OOP encapsulation, and robust exception handling.
+
