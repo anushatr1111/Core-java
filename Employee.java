@@ -24,6 +24,14 @@ public class Employee {
         this.age = age;
     }
 
+    // 4-parameter constructor (id, name, age, salary order)
+    public Employee(int id, String name, int age, double salary) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+    }
+
     // Getters and Setters with validation (Encapsulation)
     public int getId() {
         return id;

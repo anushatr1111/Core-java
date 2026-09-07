@@ -14,6 +14,8 @@ Welcome to my Core Java learning repository! This project contains a collection 
 - [7. Pattern Printing](#7-pattern-printing)
 - [8. Exception Handling](#8-exception-handling)
 - [9. Collections Framework & Mini Projects](#9-collections-framework--mini-projects)
+- [10. Collections Sorting, Comparable, Comparator & Boss Challenge](#10-collections-sorting-comparable-comparator--boss-challenge)
+- [11. Java Generics & Collections Deep Dive](#11-java-generics--collections-deep-dive)
 
 ---
 
@@ -173,4 +175,17 @@ Practiced sorting algorithms and APIs with `Collections.sort()`, iterating and s
 - [`StudentSortingwithComparable.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/StudentSortingwithComparable.java): Demonstrating natural ordering with `Comparable<Student>`, comparing students by marks in ascending order (`compareTo`).
 - [`StudentSortingwithComparator.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/StudentSortingwithComparator.java): Implementing multiple custom sorting rules with `Comparator<Student>` (alphabetical by name and descending by marks).
 - [`EmployeeSortingSystem.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/EmployeeSortingSystem.java): **Boss Challenge** — An Employee Management System with an interactive CLI menu, `ArrayList<Employee>`, custom `Comparator` sorting by salary, name, and age, highest salary queries, OOP encapsulation, and robust exception handling.
+
+---
+
+## 11. Java Generics & Collections Deep Dive
+Practiced Java generics (generic classes, generic methods, generic collections), set vs list behavioral contrasts, key-value mappings with `Map`, and architecting a comprehensive generic Employee Management System integrating `List`, `Set`, `Map`, `Comparator`, and custom exception handling.
+
+### Programs & Files:
+- [`GenericList.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/GenericList.java): Creating `List<Integer>`, adding 10 elements, and computing sum, largest, smallest, even count, and odd count using `for-each` loops.
+- [`ListVsSet.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/ListVsSet.java): Inserting an array with duplicates into `List<Integer>` and `Set<Integer>`, comparing outputs and sizes, and analyzing why collections handle duplicate entries differently.
+- [`GenericMethod.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/GenericMethod.java): Generic method `printArray(T[] array)` capable of printing arrays of any reference type (`Integer[]`, `String[]`, `Double[]`).
+- [`GenericBox.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/GenericBox.java): Generic class `Box<T>` encapsulating `value`, getters, setters, and display methods with compile-time type safety for `Integer`, `String`, and `Double`.
+- [`EmployeeMap.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/EmployeeMap.java): Key-value employee management with `Map<Integer, String>`, demonstrating search, addition, update, removal, existence checking, and sizing.
+- [`GenericEmployeeManagementSystem.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/GenericEmployeeManagementSystem.java): **Boss Challenge** — Production-style Employee Management CLI coordinating `List<Employee>` for ordered records, `Set<Integer>` for unique ID validation, `Map<Integer, Employee>` for $O(1)$ fast lookups, multi-field `Comparator` sorting, and domain-specific exception handling.
 
