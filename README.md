@@ -189,3 +189,16 @@ Practiced Java generics (generic classes, generic methods, generic collections),
 - [`EmployeeMap.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/EmployeeMap.java): Key-value employee management with `Map<Integer, String>`, demonstrating search, addition, update, removal, existence checking, and sizing.
 - [`GenericEmployeeManagementSystem.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/GenericEmployeeManagementSystem.java): **Boss Challenge** — Production-style Employee Management CLI coordinating `List<Employee>` for ordered records, `Set<Integer>` for unique ID validation, `Map<Integer, Employee>` for $O(1)$ fast lookups, multi-field `Comparator` sorting, and domain-specific exception handling.
 
+---
+
+## 12. Java File Handling & I/O
+Practiced Java File I/O operations including checking file existence and creation, writing data with `FileWriter`, sequential reading via `BufferedReader`, counting lines, words, and characters, appending records using append mode, and developing a persistent file-based Employee Management System.
+
+### Programs & Files:
+- [`CreateaFile.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/CreateaFile.java): Checking if a file exists and creating `Student.txt` using `createNewFile()`.
+- [`WriteStudentDetails.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/WriteStudentDetails.java): Writing formatted student records to `Student.txt` using `FileWriter`.
+- [`ReadtheFile.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/ReadtheFile.java): Reading and printing line-by-line file contents using `BufferedReader` and `FileReader`.
+- [`CountLinesWordsCharacters.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/CountLinesWordsCharacters.java): Reading text files (`notes.txt`) and computing line count, word count (`split(" ")`), and character count.
+- [`AppendData.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/AppendData.java): Writing initial employee records and appending new records to `employees.txt` using `new FileWriter("employees.txt", true)`.
+- [`EmployeeManagementSystem.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/EmployeeManagementSystem.java): **Boss Challenge** — Console-driven Employee File Management System supporting adding, displaying, searching, and deleting employee records persistently in `employees.txt`.
+
