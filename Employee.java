@@ -1,8 +1,12 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class Employee {
     private int id;
     private String name;
     private double salary;
     private int age;
+    private LocalDate joiningDate;
 
     // Default constructor
     public Employee() {
@@ -14,6 +18,13 @@ public class Employee {
         this.name = name;
         this.salary = salary;
         this.age = 0;
+    }
+
+    // 3-parameter constructor with joiningDate (Day 36 Boss Challenge)
+    public Employee(int id, String name, LocalDate joiningDate) {
+        this.id = id;
+        this.name = name;
+        this.joiningDate = joiningDate;
     }
 
     // 4-parameter constructor (Encapsulation & OOP modeling)
@@ -30,6 +41,15 @@ public class Employee {
         this.name = name;
         this.age = age;
         this.salary = salary;
+    }
+
+    // 5-parameter full constructor
+    public Employee(int id, String name, double salary, int age, LocalDate joiningDate) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+        this.age = age;
+        this.joiningDate = joiningDate;
     }
 
     // Getters and Setters with validation (Encapsulation)
@@ -81,6 +101,21 @@ public class Employee {
         }
     }
 
+    public LocalDate getJoiningDate() {
+        return joiningDate;
+    }
+
+    public void setJoiningDate(LocalDate joiningDate) {
+        this.joiningDate = joiningDate;
+    }
+
+    public String getFormattedJoiningDate() {
+        if (joiningDate == null) {
+            return "N/A";
+        }
+        return joiningDate.format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+    }
+
     public void increaseSalary(double percentage) {
         if (percentage > 0) {
             this.salary = this.salary + (this.salary * percentage / 100);
@@ -89,6 +124,9 @@ public class Employee {
 
     @Override
     public String toString() {
+        if (joiningDate != null && salary == 0 && age == 0) {
+            return String.format("%d - %s - Joined: %s", id, name, getFormattedJoiningDate());
+        }
         return String.format("Employee [ID=%d, Name=%-12s, Salary=₹%.0f, Age=%d]", id, name, salary, age);
     }
 }

@@ -16,6 +16,8 @@ Welcome to my Core Java learning repository! This project contains a collection 
 - [9. Collections Framework & Mini Projects](#9-collections-framework--mini-projects)
 - [10. Collections Sorting, Comparable, Comparator & Boss Challenge](#10-collections-sorting-comparable-comparator--boss-challenge)
 - [11. Java Generics & Collections Deep Dive](#11-java-generics--collections-deep-dive)
+- [12. Java File Handling & I/O](#12-java-file-handling--io)
+- [13. Java Date & Time API](#13-java-date--time-api)
 
 ---
 
@@ -201,4 +203,17 @@ Practiced Java File I/O operations including checking file existence and creatio
 - [`CountLinesWordsCharacters.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/CountLinesWordsCharacters.java): Reading text files (`notes.txt`) and computing line count, word count (`split(" ")`), and character count.
 - [`AppendData.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/AppendData.java): Writing initial employee records and appending new records to `employees.txt` using `new FileWriter("employees.txt", true)`.
 - [`EmployeeManagementSystem.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/EmployeeManagementSystem.java): **Boss Challenge** — Console-driven Employee File Management System supporting adding, displaying, searching, and deleting employee records persistently in `employees.txt`.
+
+---
+
+## 13. Java Date & Time API
+Practiced the modern `java.time` API including `LocalDate`, `LocalTime`, `LocalDateTime`, date arithmetic (`plusDays`, `minusDays`, `plusYears`), date comparisons (`isBefore`, `isAfter`, `isEqual`), custom formatting with `DateTimeFormatter`, interval calculation via `ChronoUnit.DAYS`, period measurement with `Period`, and an interactive, persistent Employee Leave Management System Boss Challenge.
+
+### Programs & Files:
+- [`DateInformation.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/DateInformation.java): Displaying today's date (`dd-MM-yyyy`), year, month, day, and day of the week using `LocalDate.now()`.
+- [`DateCalculator.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/DateCalculator.java): Interactive date calculator adding 7 days, 30 days, 1 year, and subtracting 7 days using `plusDays()`, `minusDays()`, and `plusYears()`.
+- [`BirthdayCalculator.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/BirthdayCalculator.java): Parsing user birthday, extracting birth components, evaluating whether birthday has passed or is upcoming, leap-year safety, and computing next birthday occurrence and countdown.
+- [`DaysBetweenDates.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/DaysBetweenDates.java): Calculating the exact difference in days between two input dates using `ChronoUnit.DAYS.between()`.
+- [`DateFormatter.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/DateFormatter.java): Formatting a date into four distinct representations (`dd-MM-yyyy`, `dd/MM/yyyy`, `dd MMMM yyyy`, `EEEE, dd MMMM yyyy`) using `DateTimeFormatter`.
+- [`EmployeeLeaveManagementSystem.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/EmployeeLeaveManagementSystem.java) / [`EmployeeLeaveTracker.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/EmployeeLeaveTracker.java): **Boss Challenge** — Comprehensive Employee Leave Management System integrating OOP encapsulation (`Employee`), `ArrayList` & `HashMap` collections, persistent file I/O (`employee_leaves.txt`), `LocalDate`, `Period` for employee experience, `ChronoUnit.DAYS` for leave duration, custom exceptions (`EmployeeNotFoundException`, `DuplicateEmployeeException`, `InvalidLeaveException`), and an interactive console menu.
 
