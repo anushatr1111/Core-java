@@ -18,6 +18,13 @@ Welcome to my Core Java learning repository! This project contains a collection 
 - [11. Java Generics & Collections Deep Dive](#11-java-generics--collections-deep-dive)
 - [12. Java File Handling & I/O](#12-java-file-handling--io)
 - [13. Java Date & Time API](#13-java-date--time-api)
+- [14. Java Multithreading & Concurrency](#14-java-multithreading--concurrency)
+- [15. Java Lambda Expressions & Functional Interfaces](#15-java-lambda-expressions--functional-interfaces)
+- [16. Java Stream API Fundamentals](#16-java-stream-api-fundamentals)
+- [17. Java Optional & Advanced Stream Operations](#17-java-optional--advanced-stream-operations)
+- [18. Java Stream Terminal Operations & Short-Circuiting](#18-java-stream-terminal-operations--short-circuiting)
+- [19. Java Stream Reduction & Primitive Streams](#19-java-stream-reduction--primitive-streams)
+- [20. Comprehensive Notes & Problem-Solving Handbook (PDF)](#20-comprehensive-notes--problem-solving-handbook-pdf)
 
 ---
 
@@ -216,4 +223,82 @@ Practiced the modern `java.time` API including `LocalDate`, `LocalTime`, `LocalD
 - [`DaysBetweenDates.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/DaysBetweenDates.java): Calculating the exact difference in days between two input dates using `ChronoUnit.DAYS.between()`.
 - [`DateFormatter.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/DateFormatter.java): Formatting a date into four distinct representations (`dd-MM-yyyy`, `dd/MM/yyyy`, `dd MMMM yyyy`, `EEEE, dd MMMM yyyy`) using `DateTimeFormatter`.
 - [`EmployeeLeaveManagementSystem.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/EmployeeLeaveManagementSystem.java) / [`EmployeeLeaveTracker.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/EmployeeLeaveTracker.java): **Boss Challenge** — Comprehensive Employee Leave Management System integrating OOP encapsulation (`Employee`), `ArrayList` & `HashMap` collections, persistent file I/O (`employee_leaves.txt`), `LocalDate`, `Period` for employee experience, `ChronoUnit.DAYS` for leave duration, custom exceptions (`EmployeeNotFoundException`, `DuplicateEmployeeException`, `InvalidLeaveException`), and an interactive console menu.
+
+---
+
+## 14. Java Multithreading & Concurrency
+Mastered multithreading foundations in Java: extending `Thread`, implementing `Runnable`, lifecycle management (`start()`, `run()`, `join()`, `sleep()`), concurrent thread coordination, race condition avoidance, and thread synchronization with `synchronized`.
+
+### Programs & Files:
+- [`MyThread.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/MyThread.java): Creating custom threads by extending `Thread` and overriding `run()`.
+- [`PrintNumbersUsingaThread.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/PrintNumbersUsingaThread.java): Thread printing numbers with `Thread.sleep()` intervals to observe asynchronous scheduling.
+- [`TwoThreads.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/TwoThreads.java): Running two distinct concurrent threads (`NumberThread` 1-5 and `AlphabetThread` A-E) concurrently.
+- [`RunnableJoin.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/RunnableJoin.java): Creating threads via `implements Runnable` and coordinating completion order using `thread.join()`.
+- [`SharedCounter.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/SharedCounter.java): Thread-safe shared counter demonstrating synchronization, eliminating race conditions across parallel threads.
+
+---
+
+## 15. Java Lambda Expressions & Functional Interfaces
+Learned the concise functional programming features introduced in Java 8: syntax simplification with lambdas, creating custom `@FunctionalInterface`, and leveraging built-in standard functional interfaces (`Predicate`, `Consumer`, `Function`, `Supplier`), chained compositions (`.and()`, `.andThen()`), and collection sorting.
+
+### Programs & Files:
+- [`LambdaCalculator.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/LambdaCalculator.java): Custom `@FunctionalInterface Calculator` implementing addition, subtraction, multiplication, and division as concise lambda expressions.
+- [`EvenNumberPredicate.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/EvenNumberPredicate.java): `Predicate<Integer>` for testing even numbers and compound predicates using `.and()`.
+- [`ConsumerArrayList.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/ConsumerArrayList.java): `Consumer<String>` operating inside `ArrayList.forEach()` with chained side-effects via `.andThen()`.
+- [`NumberTransformationFunction.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/NumberTransformationFunction.java): `Function<Integer, Integer>` performing mathematical mappings (square, cube, double) and mathematical pipelines with `.andThen()` and `.compose()`.
+- [`LambdaSorting.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/LambdaSorting.java): Multi-type sorting using lambdas (ascending/descending integers, alphabetical strings, length-based sorting).
+- [`EmployeeLambdaSystem.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/EmployeeLambdaSystem.java): **Boss Challenge** — Interactive CLI menu performing dynamic employee sorting, `Predicate` criteria filtering, and `Consumer` logging.
+
+---
+
+## 16. Java Stream API Fundamentals
+Transitioned from loops to declarative pipeline processing with the Java Stream API: filtering, element transformation, stream ordering, accumulation, and aggregations.
+
+### Programs & Files:
+- [`FilterEvenOdd.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/FilterEvenOdd.java): Filtering even/odd integers, counting matches with `.count()`, and collecting subsets with `.collect(Collectors.toList())`.
+- [`MapNumbers.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/MapNumbers.java): Transforming numeric elements using `.map()` (multiplication, squaring, string formatting).
+- [`FilterSortCollect.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/FilterSortCollect.java): Chaining `.filter(n > 30) -> .sorted() -> .collect()` in ascending and descending orders.
+- [`ReduceOperations.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/ReduceOperations.java): Combining values into a single result with `.reduce()` (sum with identity 0, product with identity 1, custom max/min).
+- [`EmployeeStreamProcessing.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/EmployeeStreamProcessing.java): Stream queries on domain objects (high salaries, young employees, extracting names, salary sorting, and average).
+- [`EmployeeAnalyticsSystem.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/EmployeeAnalyticsSystem.java): **Boss Challenge** — Full-featured 11-option console dashboard processing 10+ employee records using all core Stream operations.
+
+---
+
+## 17. Java Optional & Advanced Stream Operations
+Explored defensive programming against `NullPointerException` with `Optional<T>` and advanced stream manipulation tools.
+
+### Programs & Files:
+- [`OptionalBasics.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/OptionalBasics.java): Complete API walkthrough of `Optional.of()`, `Optional.ofNullable()`, `isPresent()`, `orElse()`, `orElseGet()`, and `orElseThrow()`.
+- [`AdvancedStreamOperations.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/AdvancedStreamOperations.java): Advanced pipeline operations including `.distinct()` deduplication, `.limit()`, `.skip()`, `.findFirst()`, `.anyMatch()`, and `.allMatch()`.
+
+---
+
+## 18. Java Stream Terminal Operations & Short-Circuiting
+Deep dive into terminal operations, short-circuiting mechanics, lazy evaluation behavior, and stream consumption safety.
+
+### Programs & Files:
+- [`NoneMatchDemo.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/NoneMatchDemo.java): `noneMatch()` validation, checking absence of negative numbers, and side-by-side comparison with `anyMatch()`/`allMatch()`.
+- [`FindAnyDemo.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/FindAnyDemo.java): `findAny()` behavior, comparing sequential vs parallel characteristics with `findFirst()`, and safe fallback retrieval.
+- [`MaxMinDemo.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/MaxMinDemo.java): Stream `.max()` and `.min()` with natural and custom `Comparator` rules, including highest/lowest salary queries.
+- [`CountToArrayDemo.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/CountToArrayDemo.java): Stream counting (`count()` returning `long`) and array conversion using `.toArray()`, typed arrays `Integer[]::new`, and primitive arrays `int[]`.
+- [`ShortCircuitingDemo.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/ShortCircuitingDemo.java): Step-by-step trace showing early exit behavior on `anyMatch`, `allMatch`, `noneMatch`, `findFirst`, and proving lazy evaluation.
+- [`TerminalOpsChallenge.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/TerminalOpsChallenge.java): **Interview Level Challenge** — Pipeline finding the first unique number > 25 (`distinct() -> filter() -> findFirst()`) and demonstrating stream consumption rules (`IllegalStateException` on reuse).
+
+---
+
+## 19. Java Stream Reduction & Primitive Streams
+Mastered numerical data processing without wrapper overhead using primitive streams (`IntStream`, `LongStream`, `DoubleStream`), numerical statistics, and advanced reduction patterns.
+
+### Programs & Files:
+- [`ReduceAdvanced.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/ReduceAdvanced.java): `reduce()` with identity values (addition identity 0, multiplication identity 1), Optional reductions, and custom min/max.
+- [`IntStreamDemo.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/IntStreamDemo.java): `IntStream.range()` (exclusive) vs `IntStream.rangeClosed()` (inclusive), summing 1 to 100 (`5050`), and converting primitive streams to `List<Integer>` with `.boxed()`.
+- [`PrimitiveStreamsDemo.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/PrimitiveStreamsDemo.java): `LongStream` and `DoubleStream` arithmetic, `DoubleSummaryStatistics`, and e-commerce order revenue aggregation.
+- [`SummaryStatisticsDemo.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/SummaryStatisticsDemo.java): One-shot calculation of `count`, `sum`, `min`, `max`, and `average` via `IntSummaryStatistics` with retail invoice analytics.
+- [`SalaryAggregation.java`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/SalaryAggregation.java): **Boss Challenge / Real-World Interview** — Production pipeline: `salaries.stream().distinct().filter(s -> s > 30000).mapToInt(...).summaryStatistics()`, plus Employee domain payroll aggregations.
+
+---
+
+## 20. Comprehensive Notes & Problem-Solving Handbook (PDF)
+- [`Core_Java_Complete_Notes.pdf`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/Core_Java_Complete_Notes.pdf): Complete 106-page publication-quality Core Java notes handbook covering 157 problems across 17 learning modules with definitions, ASCII/SVG architecture diagrams, flowcharts, code examples, dry-runs, and interview tips.
+- [`Core_Java_Complete_Notes.html`](file:///c:/Users/Lenovo/OneDrive%20-%20Kamaraj%20College%20of%20Engineering%20and%20Technology/Desktop/Web_Dev/Java/Core_Java_Complete_Notes.html): Interactive responsive web handbook version.
 
